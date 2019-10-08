@@ -12,6 +12,7 @@ node {
 
    stage 'Mocha test'
         sh './node_modules/mocha/bin/mocha'
+        sh 'npm config set strict-ssl=false'
 
    stage 'Cleanup'
         echo 'prune and cleanup'
