@@ -1,5 +1,8 @@
 #!groovy 
-
+#! 1 Get the code from GitHub
+#! 2 Install the different dependencies by calling the npm install
+#! 3 Run our run with the command mocha
+#! 4 Clean up
 node {
    stage 'Checkout'
         checkout scm
